@@ -83,4 +83,62 @@ P3.set_xlabel("t")
 P3.set_ylabel("Amplitude")
 P3.set_title("d_n")
 
+# 3(b) z_n
+h_new = np.array([h[0], h[1], 0, 0, h[2], 0, h[3]])
+NN = np.size(h_new)
+t = np.arange(NN)*20e-9
+
+plt.style.use('dark_background')
+fig, P4 = plt.subplots()
+markerline, stemlines, baseline = P4.stem(t, abs(h_new))
+plt.setp(markerline, color='springgreen', markersize=8.5)
+plt.setp(stemlines, color='cornflowerblue', linewidth=4.0, linestyle='--')
+plt.setp(baseline, color='palevioletred', linewidth=2.0)
+P4.set_xlabel("t")
+P4.set_ylabel("Amplitude")
+P4.set_title("h_new")
+
+z_n_temp = np.zeros((NN,np.size(d_n)), dtype=complex)
+z_n_temp2 = np.zeros((NN,np.size(d_n)+NN-1), dtype=complex)
+
+for o in range(0, NN, 1):
+    offset_zero_front = np.zeros((o), dtype=complex)
+    offset_zero_back = np.zeros((NN-1-o), dtype=complex)
+    z_n_temp[o,:] = h_new[o]*d_n # [1x48]
+    z_n_temp2[o,:] = np.concatenate((offset_zero_front, z_n_temp[o,:], offset_zero_back)) # [1x54]
+
+z_n = sum(z_n_temp2) # [1x54]
+t = np.arange(np.size(d_n)+6)*20e-9
+
+plt.style.use('dark_background')
+fig, P5 = plt.subplots()
+P5.plot(t, np.real(z_n), '-', color='palevioletred', linewidth=4.0)
+P5.set_xlabel("t")
+P5.set_ylabel("Amplitude")
+P5.set_title("real z_n")
+
+plt.style.use('dark_background')
+fig, P6 = plt.subplots()
+P6.plot(t, np.imag(z_n), '-', color='palevioletred', linewidth=4.0)
+P6.set_xlabel("t")
+P6.set_ylabel("Amplitude")
+P6.set_title("imag z_n")
+
+plt.style.use('dark_background')
+fig, P7 = plt.subplots()
+P7.plot(t, abs(z_n), '--', color='palevioletred', linewidth=3.0, label='abs z_n')
+t2 = np.arange(np.size(d_n))*20e-9
+markerline, stemlines, baseline = P7.stem(t2, d_n, label='d_n')
+plt.setp(markerline, color='springgreen', markersize=8.5)
+plt.setp(stemlines, color='cornflowerblue', linewidth=4.0, linestyle='--')
+plt.setp(baseline, color='palevioletred', linewidth=2.0)
+
+P7.legend(loc='lower right')
+P7.set_xlabel("t")
+P7.set_ylabel("Amplitude")
+P7.set_title("imag z_n")
+
 plt.show()
+
+# 3(c) ISI
+# NO
