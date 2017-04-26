@@ -138,7 +138,28 @@ P7.set_xlabel("t")
 P7.set_ylabel("Amplitude")
 P7.set_title("imag z_n")
 
-plt.show()
-
 # 3(c) ISI
 # NO
+
+# 4(a) Binary for CFO
+Binary_data_CFO = np.array([1, 0, 1, 0, 1, 1, 0, 1])
+d_n_before_CFO = np.zeros(np.size(Binary_data_CFO)*4, dtype=complex)
+
+for r in range(0, np.size(Binary_data_CFO), 1):
+    if Binary_data_CFO[r] == 0:
+        d_n_before_CFO[np.arange(4)+4*r] = np.array([1, 1, 1, 1])
+    else:
+        d_n_before_CFO[np.arange(4)+4*r] = np.array([-1, -1, -1, -1])
+
+ttt = np.arange(np.size(d_n_before_CFO))*20e-9
+plt.style.use('dark_background')
+fig, P8 = plt.subplots()
+markerline, stemlines, baseline = P8.stem(ttt, d_n_before_CFO)
+plt.setp(markerline, color='springgreen', markersize=8.5)
+plt.setp(stemlines, color='cornflowerblue', linewidth=4.0, linestyle='--')
+plt.setp(baseline, color='palevioletred', linewidth=2.0)
+P8.set_xlabel("t")
+P8.set_ylabel("Amplitude")
+P8.set_title("d_n")
+
+plt.show()
