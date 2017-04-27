@@ -162,4 +162,22 @@ P8.set_xlabel("t")
 P8.set_ylabel("Amplitude")
 P8.set_title("d_n")
 
+# 4(b) CFO
+CFO=800e3
+d_n_after_CFO = d_n_before_CFO*np.exp(-1j*2*np.pi*CFO*ttt)
+
+plt.style.use('dark_background')
+fig, P9 = plt.subplots()
+P9.plot(ttt, np.real(d_n_after_CFO), '-', color='palevioletred', linewidth=4.0)
+P9.set_xlabel("t")
+P9.set_ylabel("Amplitude")
+P9.set_title("Real CFO")
+
+plt.style.use('dark_background')
+fig, P10 = plt.subplots()
+P10.plot(ttt, np.imag(d_n_after_CFO), '-', color='palevioletred', linewidth=4.0)
+P10.set_xlabel("t")
+P10.set_ylabel("Amplitude")
+P10.set_title("Imag CFO")
+
 plt.show()
