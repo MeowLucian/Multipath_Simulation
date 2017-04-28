@@ -180,4 +180,14 @@ P10.set_xlabel("t")
 P10.set_ylabel("Amplitude")
 P10.set_title("Imag CFO")
 
+# 4(c) CFO complex
+plt.style.use('dark_background')
+fig, P11 = plt.subplots()
+P11.plot(np.real(d_n_after_CFO), np.imag(d_n_after_CFO), 'o', color='palevioletred', linewidth=4.0)
+P11.set_xlabel("I")
+P11.set_ylabel("Q")
+P11.set_title("CFO Complex")
+P11.axis('equal')
+P11.axis([-1.5, 1.5, -1.5, 1.5])
+
 plt.show()
