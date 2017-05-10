@@ -17,3 +17,9 @@ Using Python to simulate multipath fading channel
 | 1            | -3            | 0.5012        | 0.2623           | 20 ns        |
 | 2            | -6            | 0.2512        | 0.1315           | 80 ns        |
 | 3            | -8            | 0.1585        | 0.0829           | 120 ns       |
+
+* (b) Max excess delay
+
+    120 ns
+
+* (c) Mean excess delay
