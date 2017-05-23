@@ -164,7 +164,7 @@ P8.set_title("d_n")
 
 # 4(b) CFO
 CFO=800e3
-d_n_after_CFO = d_n_before_CFO*np.exp(-1j*2*np.pi*CFO*ttt)
+d_n_after_CFO = d_n_before_CFO*np.exp(1j*2*np.pi*CFO*ttt)
 
 plt.style.use('dark_background')
 fig, P9 = plt.subplots()
