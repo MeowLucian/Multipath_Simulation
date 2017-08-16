@@ -28,7 +28,7 @@ Using Python to simulate multipath fading channel
 
 * (d) RMS excess delay
 
-<img src="Picture/RMS_excess_delay.PNG" width="480">
+<img src="Picture/RMS_excess_delay.PNG" width="600">
 
 ## Channel
 
@@ -36,16 +36,30 @@ Using Python to simulate multipath fading channel
 
 <img src="Picture/Channel_impulse.PNG" width="180">
 
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_4.PNG" width="480">
+
 * (b) Fourier transform
 
-<img src="Picture/Fourier_transform.PNG" width="480">
+<img src="Picture/Fourier_transform.PNG" width="600">
 
 * (c) Channel frequency response
 
-<img src="Picture/figure_1.PNG" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_1.png" width="480">
 
-<img src="Picture/figure_2.PNG" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_2.png" width="480">
 
 * (d) Subcarrier
 
-<img src="Picture/Subcarrier.PNG" width="180">
+<img src="Picture/Subcarrier.PNG" width="250">
+
+## Channel fading effect
+
+* (a) TX_signal=[0 1 0 1 1 1]
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_3.png" width="480">
+
+* (b) Channel effect
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_5.png" width="480">
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_6.png" width="480">
