@@ -44,9 +44,9 @@ Using Python to simulate multipath fading channel
 
 * (c) Channel frequency response
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_1.PNG" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_1.png" width="480">
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_2.PNG" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_2.png" width="480">
 
 * (d) Subcarrier
 
