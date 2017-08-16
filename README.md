@@ -23,3 +23,29 @@ Using Python to simulate multipath fading channel
     120 ns
 
 * (c) Mean excess delay
+
+<img src="Picture/Mean_excess_delay.PNG" width="480">
+
+* (d) RMS excess delay
+
+<img src="Picture/RMS_excess_delay.PNG" width="480">
+
+## Channel
+
+* (a) Channel impulse
+
+<img src="Picture/Channel_impulse.PNG" width="180">
+
+* (b) Fourier transform
+
+<img src="Picture/Fourier_transform.PNG" width="480">
+
+* (c) Channel frequency response
+
+<img src="Picture/figure_1.PNG" width="480">
+
+<img src="Picture/figure_2.PNG" width="480">
+
+* (d) Subcarrier
+
+<img src="Picture/Subcarrier.PNG" width="180">
