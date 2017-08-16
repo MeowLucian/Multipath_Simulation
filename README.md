@@ -44,9 +44,9 @@ Using Python to simulate multipath fading channel
 
 * (c) Channel frequency response
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_1.png" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_1.PNG" width="480">
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_2.png" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_2.PNG" width="480">
 
 * (d) Subcarrier
 
@@ -56,10 +56,30 @@ Using Python to simulate multipath fading channel
 
 * (a) TX_signal=[0 1 0 1 1 1]
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_3.png" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_3.PNG" width="480">
 
 * (b) Channel effect
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_5.png" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_5.PNG" width="480">
 
-<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_6.png" width="480">
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_6.PNG" width="480">
+
+* (C) NO ISI
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_7.PNG" width="480">
+
+## CFO
+
+* (a) TX_signal=[1 0 1 0 1 1 0 1]
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_8.PNG" width="480">
+
+* (b) After CFO
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_9.PNG" width="480">
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_10.PNG" width="480">
+
+* (c) Complex plane
+
+<img src="https://raw.githubusercontent.com/MeowLucian/Multipath_Simulation/master/Picture/figure_11.PNG" width="480">
